@@ -9,10 +9,10 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Dados do Aluno
 
-- **Nome completo:** [Preencher aqui]
-- **Matrícula:** [Preencher aqui]
-- **Curso:** [Preencher aqui]
-- **Turma:** [Preencher aqui]
+- **Nome completo:** Arthur Martins Santos da Silva
+- **Matrícula:** 241038174
+- **Curso:** Engenharia de Software
+- **Turma:** 06
 
 ---
 
