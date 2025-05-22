@@ -1,23 +1,39 @@
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Main {
 
-    public final static void clearConsole() {
-        try {
-            final String os = System.getProperty("os.name");
+    // Limpa a tela, pq eu não achei jeito melhor e os que eu tentei de limpar o
+    // terminal não deram jeito
+    public static void limparTela() {
+        System.out.println("");
 
-            if (os.contains("Windows")) {
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            } else {
-                System.out.print("\033[H\033[2J");
-                System.out.flush();
-            }
-        } catch (final Exception e) {
-            // Se nada funcionar, imprime várias linhas em branco
-            for (int i = 0; i < 50; i++) {
-                System.out.println();
-            }
-        }
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
     public static void main(String args[]) {
@@ -48,28 +64,28 @@ public class Main {
 
             if (selecaoDeModo == 1) {
 
-                clearConsole();
+                limparTela();
                 System.out.println("Modo Aluno Ativado");
 
             }
 
             else if (selecaoDeModo == 2) {
 
-                clearConsole();
+                limparTela();
                 System.out.println("Modo Disciplina/Turma Ativado");
 
             }
 
             else if (selecaoDeModo == 3) {
 
-                clearConsole();
+                limparTela();
                 System.out.println("Modo Avaliação/Frequência Ativado");
 
             }
 
             else if (selecaoDeModo == 4) {
 
-                clearConsole();
+                limparTela();
                 System.out.println("Você escolheu sair!");
 
             }
