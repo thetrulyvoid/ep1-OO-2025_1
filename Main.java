@@ -37,17 +37,60 @@ public class Main {
     }
 
     public static void main(String args[]) {
-
-        int selecaoDeModo = 0;
         Scanner ler = new Scanner(System.in);
 
+        while (true) { // Loop infinito para o menu principal
+            limparTela();
+            exibirMenuPrincipal();
+
+            int selecaoDeModo = ler.nextInt();
+            ler.nextLine(); // Limpa buffer
+
+            switch (selecaoDeModo) {
+                case 1: {
+                    limparTela();
+                    SecretariaAcademica secretaria = new SecretariaAcademica();
+                    secretaria.iniciarModoAluno();
+                    break;
+                }
+                case 2: {
+                    limparTela();
+                    System.out.println("Modo Disciplina/Turma Ativado");
+                    // Implementação futura
+                    break;
+                }
+                case 3: {
+                    limparTela();
+                    System.out.println("Modo Avaliação/Frequência Ativado");
+                    // Implementação futura
+                    break;
+                }
+                case 4: {
+                    limparTela();
+                    System.out.println("Saindo do sistema...");
+                    System.exit(0);
+                }
+                default: {
+                    System.out.println("Opção inválida! Tente novamente.");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+    private static void exibirMenuPrincipal() {
         System.out.println("+-----------------------------------+");
-        System.out.println("|   ███████╗███████╗ ██████╗ ██╗   ██╗");
-        System.out.println("|   ██╔════╝██╔════╝██╔═══██╗██║   ██║");
-        System.out.println("|   ███████╗█████╗  ██║   ██║██║   ██║");
-        System.out.println("|   ╚════██║██╔══╝  ██║   ██║╚██╗ ██╔╝");
-        System.out.println("|   ███████║███████╗╚██████╔╝ ╚████╔╝ ");
-        System.out.println("|   ╚══════╝╚══════╝ ╚═════╝   ╚═══╝  ");
+        System.out.println("|   ███████╗██╗   ██╗██╗██╗         ");
+        System.out.println("|   ██╔════╝██║   ██║██║██║         ");
+        System.out.println("|   █████╗  ██║   ██║██║██║         ");
+        System.out.println("|   ██╔══╝  ██║   ██║██║██║         ");
+        System.out.println("|   ██║     ╚██████╔╝██║██║         ");
+        System.out.println("|   ╚═╝      ╚═════╝ ╚═╝╚═╝         ");
         System.out.println("+-----------------------------------+");
         System.out.println("|        SISTEMA ACADÊMICO FCTE      |");
         System.out.println("+-----------------------------------+");
@@ -57,47 +100,5 @@ public class Main {
         System.out.println("| 4. Sair                           |");
         System.out.println("+-----------------------------------+");
         System.out.print("Escolha uma opção: ");
-
-        while (selecaoDeModo == 0 || selecaoDeModo > 4) {
-
-            selecaoDeModo = ler.nextInt();
-
-            if (selecaoDeModo == 1) {
-
-                limparTela();
-                System.out.println("Modo Aluno Ativado");
-
-            }
-
-            else if (selecaoDeModo == 2) {
-
-                limparTela();
-                System.out.println("Modo Disciplina/Turma Ativado");
-
-            }
-
-            else if (selecaoDeModo == 3) {
-
-                limparTela();
-                System.out.println("Modo Avaliação/Frequência Ativado");
-
-            }
-
-            else if (selecaoDeModo == 4) {
-
-                limparTela();
-                System.out.println("Você escolheu sair!");
-
-            }
-
-            else {
-
-                System.out.println("Esse número não é válido, tente de novo!");
-                System.out.print("Escolha uma opção: ");
-
-            }
-
-        }
     }
-
 }

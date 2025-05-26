@@ -18,6 +18,19 @@ public class Aluno {
 
     }
 
+    public Aluno() {
+        this.disciplinasMatriculadas = new ArrayList<>();
+        this.nome = "";
+        this.matricula = "";
+        this.curso = "";
+    }
+
+    public void matricularEmDisciplina(String disciplina) {
+        if (!disciplinasMatriculadas.contains(disciplina)) {
+            disciplinasMatriculadas.add(disciplina);
+        }
+    }
+
     @Override
     public String toString() {
         return nome + ";" + matricula + ";" + curso + ";" + String.join(",", disciplinasMatriculadas);
@@ -59,6 +72,10 @@ public class Aluno {
     public class AlunoEspecial extends Aluno {
 
         private final int LIMITE_DISCIPLINAS = 2;
+
+        public AlunoEspecial(String nome, String matricula, String curso) {
+            super(nome, matricula, curso); // Chamar o construtor da superclasse
+        }
 
         @Override
         public void matricularEmDisciplina(String disciplina) {
