@@ -28,7 +28,7 @@ O enunciado do trabalho pode ser encontrado aqui:
    Está tudo em apenas uma pasta, então não tem muito segredo, todos os arquivos estão na pasta ep1-OO-2025_1/
 
 3. **Versão do JAVA utilizada:**  
-   java 11.0.27
+   openjdk version "11.0.27" (Java 11.0.27)
 
 ---
 
