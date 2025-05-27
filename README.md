@@ -19,16 +19,16 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Instruções para Compilação e Execução
 
 1. **Compilação:**  
-   [Descrever aqui como compilar o projeto. Exemplo: `javac Main.java` ou o script usado]
+   Utilize a extensão Extension Pack for Java do VS Code para rodar.
 
 2. **Execução:**  
-   [Descrever aqui como executar o projeto. Exemplo: `java Main` ou o script usado]
+   Apenas abra o código no VS Code e clique em executar no canto superior direito depois de baixar a extensão.
 
 3. **Estrutura de Pastas:**  
-   [Descrever aqui as principais pastas do projeto]
+   Está tudo em apenas uma pasta, então não tem muito segredo, todos os arquivos estão na pasta ep1-OO-2025_1/
 
 3. **Versão do JAVA utilizada:**  
-   [Descrever aqui como versão do JAVA utilizada no projeto. Sugestão: `java 21`]
+   java 11.0.27
 
 ---
 
@@ -41,36 +41,38 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Prints da Execução
 
 1. Menu Principal:  
-   ![Inserir Print 1](caminho/do/print1.png)
+   ![image](https://github.com/user-attachments/assets/3cb41967-8dc0-41f6-ba7f-b41d248143ab)
 
 2. Cadastro de Aluno:  
-   ![Inserir Print 2](caminho/do/print2.png)
+   ![image](https://github.com/user-attachments/assets/8d1e3bd0-5d22-433d-b0aa-3c67507d781c)
 
 3. Relatório de Frequência/Notas:  
-   ![Inserir Print 3](caminho/do/print3.png)
+   [Não consegui fazer esse modo]
 
 ---
 
 ## Principais Funcionalidades Implementadas
 
 - [X] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
-- [ ] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
-- [ ] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
+- [X] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
+- [X] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
 - [ ] Lançamento de notas e controle de presença
 - [ ] Cálculo de média final e verificação de aprovação/reprovação
 - [ ] Relatórios de desempenho acadêmico por aluno, turma e disciplina
 - [x] Persistência de dados em arquivos (.txt ou .csv)
-- [ ] Tratamento de duplicidade de matrículas
+- [X] Tratamento de duplicidade de matrículas
 - [x] Uso de herança, polimorfismo e encapsulamento
 
 ---
 
 ## Observações (Extras ou Dificuldades)
 
-- [Espaço para o aluno comentar qualquer funcionalidade extra que implementou, dificuldades enfrentadas, ou considerações importantes.]
+- Tive dificuldades com o tempo, não me planejei direito, começei tarde o trabalho tudo culpa da minha irresponsabilidade.
+- Fiz o que consegui, tem alguns bugs ainda, como por exemplo quando você cria um aluno, cria uma turma, o matricula naquela turma e pede para listar o aluno depois, ele some.
+- Mas acredito que fiz bem o que fiz, apesar de ter um modo inteiro faltando.
 
 ---
 
 ## Contato
 
-- [Opcional: E-mail pessoal do aluno.]
+- arthurmss2006@gmail.com ou 241038174@aluno.unb.br
