@@ -53,14 +53,14 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Principais Funcionalidades Implementadas
 
-- [X] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
-- [X] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
-- [X] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
+- [x] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
+- [x] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
+- [x] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
 - [ ] Lançamento de notas e controle de presença
 - [ ] Cálculo de média final e verificação de aprovação/reprovação
 - [ ] Relatórios de desempenho acadêmico por aluno, turma e disciplina
 - [x] Persistência de dados em arquivos (.txt ou .csv)
-- [X] Tratamento de duplicidade de matrículas
+- [x] Tratamento de duplicidade de matrículas
 - [x] Uso de herança, polimorfismo e encapsulamento
 
 ---
